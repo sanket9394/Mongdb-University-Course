@@ -228,7 +228,7 @@
 	use 100YWeatherSmall ; 
 	db.data.find({"atmosphericPressureChange": {"$exists" : false}}).count()
 	```
-- ** Logical Operators**	:
+- **Logical Operators**	:
 	```javascript
 	db.movieDetails.find({$or: [{"tomato.meter": {$gt: 95}},                               
 	                            {"metacritic": {$gt: 88}}]},
@@ -274,7 +274,7 @@
 	}).count()
 	```
 
-- ** Array Operators** : 
+- **Array Operators** : 
 	- **$all**
 		```javascript
 		//Matches all records that contain aleast these mentioned fields
